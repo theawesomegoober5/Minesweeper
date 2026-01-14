@@ -1,0 +1,53 @@
+ <script type="text/javascript" src="/script.js"></script>
+   <!--<script type="text/javascript" src="js/jquery.js"></script>-->
+   <script type="text/javascript">
+   
+   $(document).ready(function() {
+      initPuzzle();
+   });
+   
+   /* patch to fix element offset calculation; uses JQuery */
+   function element_coords(element) {
+       var o = $(element).offset();
+       var ex = Math.round(o.left), ey = Math.round(o.top);
+       return {x: ex, y:ey};
+   }
+   
+   </script>
+   <hr/>
+   <div id="puzzle" style="display: none">
+   <p align="center">
+     <input type="button" id="new" value="New game">
+     <input type="button" id="restart" value="Restart game">
+     <input type="button" id="undo" value="Undo move">
+     <input type="button" id="redo" value="Redo move">
+     <input type="button" id="solve" value="Solve game">
+     <input type="button" id="specific" value="Enter game ID">
+     <input type="button" id="random" value="Enter random seed">
+     <select id="gametype"></select>
+   </p>
+   <div align=center>
+     <div id="resizable" style="position:relative; left:0; top:0">
+     <canvas style="display: block" id="puzzlecanvas" width="1px" height="1px" tabindex="1">
+     </canvas>
+     <div id="statusbarholder" style="display: block">
+     </div>
+     </div>
+     <p>
+       Link to this puzzle:
+       <br/>
+       <a id="permalink-desc">by game ID (longer, more stable)</a>
+       <br/>
+       <a id="permalink-seed">by random seed (shorter, less stable)</a>
+     </p>
+   </div>
+   </div>
+   <div id="apology" style="display:none">
+   Sorry, this Javascript puzzle doesn't seem to work in your web
+   browser. Perhaps you have Javascript disabled, or perhaps your browser
+   doesn't provide a feature that the puzzle code requires (such as
+   <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Typed_arrays">typed arrays</a>).
+   These puzzles have been successfully run in Firefox 19, Chrome 26,
+   Internet Explorer 10 and Safari 6.
+   </div>
+   <hr/>
