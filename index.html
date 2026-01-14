@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--doctype-->
+<!--Gabe note 1:anything with lorem ipsum is a place holder. please remember to remove it. i am also allowed to use ai or other sources to fill in website info. just dont use ai to make the code-->
+  <title>Basic Web Page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+<html>
+<!--title-->
+<head>
+  <title>Minesweeper Tutorial</title>
+</head>
+
+<body>
+  <nav>
+    <a href="./index.html">Minesweeper</a>
+    <a href="./minesweepergame.html">Play a quick game! </a> <!--This is supposed to lead to script.js part. but its broken currently. code is from here https://www.interactive.onlinemathlearning.com/fun_minesweeper.php-->
+    <p> if "play a quick game" doesnt work try this other website that you can play <a href="https://www.interactive.onlinemathlearning.com/fun_minesweeper.php" target="_blank">Minesweeper</a> on</p>
+  </nav>
+<!--this is for the big title at the top-->
+  <h1>Minesweeper Tutorial</h1>
+  <nav>
+    <ul>
+<!--links to other parts, might not work correctly will fix later-->
+      <li><a href="#basics">The Basics</a></li>
+      <li><a href="#tips">Tips and Examples</a></li>
+      <li><a href="#media">Images and Videos</a></li>
+    </ul>
+  </nav>
+  <div id="basics">
+    <h2>The Basics</h2>
+    <p>Minesweeper is a logic puzzle where you uncover squares in a grid to find hidden mines, using numbers on revealed squares to deduce mine locations; left-click to reveal, right-click (or long-press on mobile) to flag suspected mines, and use the numbers (indicating adjacent mines) to clear safe squares and avoid losing. The first click is always safe and often clears a large area, while numbers show mines in the 8 surrounding squares, helping you logically flag mines and uncover more squares until the board is clear or a mine is hit.</p> <!--Credit to Gemini AI Google overview-->
+  </div>
+  <div id="tips">
+    <h2>Tips and Examples</h2>
+    <ol>
+      <li>If you have a 121 mine pattern mostly always put the mines on both the ones.</li>
+      <li>If you have a 1221 patern the mines would be on both the twos. </li>
+      <li>If you have a 232 patern the middle square wont be a mine but the other two will.</li>
+      <li>Read numbers carefully</li>
+        <li>Count flags</li>
+        <li>Use paterns</li>
+    </ol>
+    <h3>Rules</h3>
+    <p>You must clear the board without clicking on a mine by using numbers as clues to find where mines are. A number shows how many mines are touching that square. Touching means all 8 surrounding squares (up left down right  and diagonals is touching) In order to mark a flag you have to right click. if the number has laready has the correct number of flags all the other surrounding squares are safe to click. you win by when all the non mines are revealed or flagged.The first click is always safe in most versions.</p>
+  </div>
+  <div id="media">
+    <h2>Media</h2>
+    <img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg" />
+    <video src="https://youtu.be/dvvrOeITzG8?si=yipTMyTMNsXJu7SF" height="240" width="320" controls>Video not supported</video>
+  </div>
+</body>
+
+</html>
