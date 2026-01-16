@@ -17,7 +17,58 @@
     <p> if "play a quick game" doesnt work try this other website that you can play <a href="https://www.interactive.onlinemathlearning.com/fun_minesweeper.php" target="_blank">Minesweeper</a> on</p>
   </nav>
 <!--this is for the big title at the top-->
-  <h1>Minesweeper Tutorial</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Set background to black so white text is visible */
+  body {
+    background-color: black;
+    /* This sets the font to the default system font for better readability */
+    font-family: sans-serif; 
+  }
+
+  /* Style for the rainbow word */
+  .rainbow {
+    background: linear-gradient(
+      to right, 
+      red, orange, yellow, green, blue, indigo, violet, red
+    );
+    background-size: 200% auto;
+    
+    /* This clips the background to the text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    /* Makes text transparent so background shows */
+    color: transparent; 
+    
+    /* The moving animation */
+    animation: rainbow-move 2s linear infinite;
+  }
+
+  /* Style for the white word */
+  .white {
+    color: white;
+  }
+
+  /* The animation definition */
+  @keyframes rainbow-move {
+    to {
+      background-position: 200% center;
+    }
+  }
+</style> <!--this is for the rainbow stuff i used gemini for it cuz i didnt know how to make it rainbow myself-->
+</head>
+<body>
+
+  <h1>
+    <span class="rainbow">Minesweeper</span>
+    <span class="white">Tutorial</span>
+  </h1>
+
+</body>
+</html>
   <nav>
     <ul>
 <!--links to other parts, might not work correctly will fix later-->
@@ -42,11 +93,16 @@
     </ol>
     <h3>Rules</h3>
     <p>You must clear the board without clicking on a mine by using numbers as clues to find where mines are. A number shows how many mines are touching that square. Touching means all 8 surrounding squares (up left down right  and diagonals is touching) In order to mark a flag you have to right click. if the number has laready has the correct number of flags all the other surrounding squares are safe to click. you win by when all the non mines are revealed or flagged.The first click is always safe in most versions.</p>
+    
+    
   </div>
   <div id="media">
-    <h2>Media</h2>
+    <h2>Images and Videos</h2>
     <img src="https://amazing-amber-dk6m2rsipt.edgeone.app/Screenshot%202026-01-15%2012.42.10%20PM.png" />
     <video src="https://youtu.be/dvvrOeITzG8?si=yipTMyTMNsXJu7SF" height="240" width="320" controls>Video not supported</video>
+    <iframe width="420" height="315"
+src="https://youtu.be/dvvrOeITzG8?si=yipTMyTMNsXJu7SF">
+</iframe>
   </div>
 </body>
 
