@@ -5,3 +5,75 @@ body {
   font-family: sans-serif; 
 }
 /* want to change this font to  open dyslexic */ 
+body {
+  background: #000;
+  color: #fff;
+  padding: 25px;
+  font-family: sans-serif; 
+}
+/* want to change this font to  open dyslexic */ 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+  
+  background-image: url("https://images.unsplash.com/photo-1604076913837-52ab5629fba9");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+nav {
+  background-color: rgba(0,0,0,0.7);
+  padding: 10px;
+  text-align: center;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+}
+
+
+#basics, #tips, #media {
+  background-color: rgba(0,0,0,0.75);
+  padding: 25px;
+  margin: 30px auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+
+h2 {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+
+ol {
+  line-height: 1.6;
+}
+
+
+img {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 2px solid white;
+}
